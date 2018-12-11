@@ -30,7 +30,8 @@
 <link href="${css}/bootstrap.css" rel="stylesheet">
 
 <!-- Bootstrap readable theme CSS -->
-<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+<!--<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">-->
+<link href="${css}/bootstrap-cyborg-theme.css" rel="stylesheet">
 
 <!-- Bootstrap DataTable -->
 <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
@@ -74,6 +75,12 @@
 			<c:if
 				test="${userClickShowProduct == true}">
 				<%@include file="singleProduct.jsp"%>
+			</c:if>
+			
+			<!-- Loads only when user clicks manage Product -->
+			<c:if
+				test="${userClickManageProducts == true}">
+				<%@include file="manageProducts.jsp"%>
 			</c:if>
 
 		</div>

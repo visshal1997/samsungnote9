@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+//import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.shoppingbackend.dao.CategoryDAO;
@@ -101,10 +101,11 @@ public class PageController {
 		return mv;
 	}
 
-	// @RequestParam demo
-	@RequestMapping(value = "/test")
-	// public ModelAndView index(@RequestParam("greeting") String greeting)
-	public ModelAndView index(@RequestParam(value = "greeting", required = false) String greeting) {
+	/* @RequestParam demo
+	   @RequestMapping(value = "/test")
+		public ModelAndView index(@RequestParam("greeting") String greeting)
+		(OR)
+		public ModelAndView index(@RequestParam(value = "greeting", required = false) String greeting) {
 		if (greeting == null) {
 			greeting = "String Parameter greeting is not present";
 		}
@@ -112,13 +113,18 @@ public class PageController {
 		mv.addObject("greeting", greeting);
 		return mv;
 	}
-
+	*/
+	
 	// @PathVariable demo
 	/*
-	 * @RequestMapping(value = "/test/{greeting}") public ModelAndView
-	 * index(@PathVariable("greeting") String greeting) { if(greeting == null) {
-	 * greeting="String Parameter greeting is not present"; } ModelAndView mv= new
-	 * ModelAndView("page"); mv.addObject("greeting", greeting); return mv; }
+	 * @RequestMapping(value = "/test/{greeting}") 
+	 * public ModelAndView index(@PathVariable("greeting") String greeting) { 
+	 * if(greeting == null) {
+	 * greeting="String Parameter greeting is not present"; } 
+	 * ModelAndView mv= new ModelAndView("page"); 
+	 * mv.addObject("greeting", greeting); 
+	 * return mv; 
+	 * }
 	 * 
 	 */
 }
