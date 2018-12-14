@@ -30,8 +30,9 @@
 <link href="${css}/bootstrap.css" rel="stylesheet">
 
 <!-- Bootstrap readable theme CSS -->
-<!--<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">-->
+<!-- <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet"> -->
 <link href="${css}/bootstrap-cyborg-theme.css" rel="stylesheet">
+
 
 <!-- Bootstrap DataTable -->
 <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
@@ -94,6 +95,9 @@
 		<!-- JQuery -->
 		<script src="${js}/jquery.js"></script>
 		
+		<!-- JQuery Validator -->
+		<script src="${js}/jquery.validate.js"></script>
+		
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.js"></script>
 		
@@ -102,6 +106,9 @@
 		
 		<!-- Bootstrap DataTable script -->
 		<script src="${js}/dataTables.bootstrap.js"></script>
+		
+		<!-- Bootbox JS -->
+		<script src="${js}/bootbox.min.js"></script>
 
 		<!-- self coded javascript -->
 		<script src="${js}/myapp.js"></script>

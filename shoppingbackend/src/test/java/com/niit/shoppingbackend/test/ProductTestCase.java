@@ -27,7 +27,7 @@ public class ProductTestCase {
 
 	@Test
 	public void testCRUDProduct() {
-		product = new Product();
+	/*	product = new Product();
 
 		product.setName("Moto g3");
 		product.setBrand("Motorola");
@@ -43,15 +43,15 @@ public class ProductTestCase {
 		// adding a product
 
 		assertEquals("something went wrong when adding a new product", true, productDAO.add(product));
-
+*/
 		// Updating a Product
 
-		product = productDAO.get(3);
-		product.setUnitPrice(55000.00);
+		product = productDAO.get(34);
+		product.setActive(true);
 
 		assertEquals("something went wrong when updating a product", true, productDAO.update(product));
 
-		// Deleting a Category
+/*		// Deleting a Category
 
 		product = productDAO.get(4);
 		assertEquals("something went wrong when deleting a product", true, productDAO.delete(product));
@@ -74,7 +74,7 @@ public class ProductTestCase {
 
 		assertEquals("something went wrong when rerieving latest 3 active products", 3,
 				productDAO.latestActiveProducts(3).size());
-
+*/
 	}
 
 }
