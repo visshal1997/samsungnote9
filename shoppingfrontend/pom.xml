@@ -59,6 +59,16 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+		<!-- Spring Webflow -->
+		
+		<!-- Spring MVC -->
+
+		<dependency>
+			<groupId>org.springframework.webflow</groupId>
+			<artifactId>spring-webflow</artifactId>
+			<version>2.5.0.RELEASE</version>
+		</dependency>
 
 	</dependencies>
 	<build>

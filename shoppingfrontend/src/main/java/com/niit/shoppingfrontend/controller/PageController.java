@@ -100,6 +100,14 @@ public class PageController {
 		mv.addObject("userClickShowProduct", true);
 		return mv;
 	}
+	// flow similar to the register flow id of spring-webflow
+	@RequestMapping(value = "/register")
+	public ModelAndView register() {
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Register");
+		//mv.addObject("userClickContact", true);
+		return mv;
+	}
 
 	/* @RequestParam demo
 	   @RequestMapping(value = "/test")
