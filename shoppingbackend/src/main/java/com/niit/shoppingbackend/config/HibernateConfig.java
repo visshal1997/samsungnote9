@@ -28,7 +28,7 @@ public class HibernateConfig {
 	// creating a DataSource object to set the connection properties of the chosen
 	// database
 	// dataSource bean will be available
-	@Bean
+	@Bean("dataSource")
 	public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName(DATABASE_DRIVER);
@@ -57,7 +57,7 @@ public class HibernateConfig {
 		properties.put("hibernate.dialect", DATABASE_DIALECT);
 		properties.put("hibernate.show_sql", true);
 		properties.put("hibernate.format_sql", true);
-		properties.put("hibernate.hbm2ddl.auto", "create");
+		properties.put("hibernate.hbm2ddl_auto", "update");
 		return properties;
 	}
 

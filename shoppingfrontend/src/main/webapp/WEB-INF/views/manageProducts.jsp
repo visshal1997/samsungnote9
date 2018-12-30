@@ -178,39 +178,41 @@
 		</div>
 		<div class="col-xs-12">
 			<div style="overflow: auto">
+				<div class="container-fluid">
+					<div class="table-responsive">
+						<!-- Products table for admin -->
+						<table id="adminProductsTable"
+							class="table table-striped table-bordered">
+							<thead>
+								<tr>
 
-				<!-- Products table for admin -->
-				<table id="adminProductsTable"
-					class="table table-striped table-bordered">
-					<thead>
-						<tr>
+									<td>ID</td>
+									<td>&#160;</td>
+									<td>Name</td>
+									<td>Brand</td>
+									<td>Quantity</td>
+									<td>Unit Price</td>
+									<td>Active</td>
+									<td>Edit</td>
+								</tr>
+							</thead>
 
-							<td>ID</td>
-							<td>&#160;</td>
-							<td>Name</td>
-							<td>Brand</td>
-							<td>Quantity</td>
-							<td>Unit Price</td>
-							<td>Active</td>
-							<td>Edit</td>
-						</tr>
-					</thead>
+							<tfoot>
+								<tr>
 
-					<tfoot>
-						<tr>
-
-							<td>ID</td>
-							<td>&#160;</td>
-							<td>Name</td>
-							<td>Brand</td>
-							<td>Quantity</td>
-							<td>Unit Price</td>
-							<td>Active</td>
-							<td>Edit</td>
-						</tr>
-					</tfoot>
-				</table>
-
+									<td>ID</td>
+									<td>&#160;</td>
+									<td>Name</td>
+									<td>Brand</td>
+									<td>Quantity</td>
+									<td>Unit Price</td>
+									<td>Active</td>
+									<td>Edit</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
