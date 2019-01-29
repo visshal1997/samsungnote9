@@ -32,7 +32,7 @@
 <link href="${css}/bootstrap.css" rel="stylesheet">
 
 <!-- Bootstrap readable theme CSS -->
-<!-- <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet"> -->
+<!-- <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">  --> 
 <link href="${css}/bootstrap-cyborg-theme.css" rel="stylesheet">
 
 
@@ -84,6 +84,12 @@
 			<c:if
 				test="${userClickManageProducts == true}">
 				<%@include file="manageProducts.jsp"%>
+			</c:if>
+			
+			<!-- Loads only when user clicks show cart -->
+			<c:if
+				test="${userClickShowCart == true}">
+				<%@include file="cart.jsp"%>
 			</c:if>
 
 		</div>

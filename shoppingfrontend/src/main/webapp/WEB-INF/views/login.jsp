@@ -69,7 +69,7 @@
 				<c:if test = "${not empty message}">
 					<div class = "row">
 						<div class="col-md-offset-3 col-md-6">
-							<div class = "alert alert-danger">${message}</div>
+							<div class = "alert alert-warning">${message}</div>
 						</div>
 					</div>
 				</c:if>	

@@ -27,7 +27,7 @@ import com.niit.shoppingfrontend.util.FileUploadUtility;
 import com.niit.shoppingfrontend.validator.ProductValidator;
 
 @Controller
-@RequestMapping(value="/manage")
+@RequestMapping(value="/manage") //request mapping at class level to restrict the access to the url starting with /manage only to admin
 public class ManagementController {
 
 	@Autowired
@@ -38,13 +38,13 @@ public class ManagementController {
 	private static final Logger logger = LoggerFactory.getLogger(ManagementController.class);
 	
 	
-	@RequestMapping(value = "/products", method=RequestMethod.GET)
+	@RequestMapping(value = "/products", method=RequestMethod.GET)//by default the request method is GET
 	public ModelAndView showManageProducts(@RequestParam(name="operation", required=false) String operation) {
 						
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Manage Products");
 		mv.addObject("userClickManageProducts", true);
-		Product nproduct = new Product();
+		Product nproduct = new Product(); // this product model is attached to the spring form for Product Management
 		
 		nproduct.setActive(true);
 		nproduct.setSupplierId(1);
@@ -74,11 +74,13 @@ public class ManagementController {
 	public String handleFormSubmission(@Valid @ModelAttribute("product") Product mproduct, BindingResult results, Model model,
 			HttpServletRequest request) {
 		
-		//validating the image
+		//validating the image if new product is added(which requires an image)
 		if(mproduct.getId()==0) {
 			new ProductValidator().validate(mproduct,results);
 		}
+		
 		else{
+			//validating if the product is getting updated along with the image
 			if(!mproduct.getFile().getOriginalFilename().equals(""))
 			{
 				new ProductValidator().validate(mproduct,results);
@@ -94,7 +96,7 @@ public class ManagementController {
 			model.addAttribute("userClickManageProducts", true);
 			model.addAttribute("message", "Product submission failed!");	
 				
-			return "page";
+			return "page"; //we are just returning the same page with error message instead to redirecting it which will erase off the validations
 		}
 		logger.info(mproduct.toString());
 		
@@ -137,8 +139,8 @@ public class ManagementController {
 		
 	//	String str = (isActive)? "You have successfully deactivated the product with id " + product.getId()
 		// :"You have successfully activated the product with id " + product.getId() ;
-		return (isActive)? "You have successfully deactivated the product with id "
-		 :"You have successfully activated the product with id " ;
+		return (isActive)? "You have successfully deactivated the product"
+		 :"You have successfully activated the product" ;
 	}
 		
 	// for editing product details

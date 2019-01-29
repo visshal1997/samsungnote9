@@ -19,7 +19,7 @@
 
 				<c:otherwise>
 					<div class="col-xs-12">
-						<div class="alert alert-warning alert-dismissible">
+						<div class="alert alert-success alert-dismissible">
 							<button type="button" class="close" data-dismiss="alert">&times;</button>
 							${message}
 						</div>
@@ -127,7 +127,7 @@
 								Category: </label>
 							<div class="col-md-8">
 								<sf:select class="form-control" path="categoryId" id="categoryId" 
-									items="${categories}" 
+									items="${categories}"
 									itemLabel="name"
 									itemValue="id" />
 
