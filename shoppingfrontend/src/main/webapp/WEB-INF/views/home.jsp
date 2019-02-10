@@ -1,4 +1,4 @@
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <div class="container">
 
 	<div class="row">
@@ -22,15 +22,15 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="item active">
-								<img class="slide-image" src="http://placehold.it/800x300"
+								<img class="slide-image" src="https://10bestranked.com/wp-content/uploads/2017/11/best-kids-drone.jpg"
 									alt="">
 							</div>
 							<div class="item">
-								<img class="slide-image" src="http://placehold.it/800x300"
+								<img class="slide-image" src="https://cartvela.com/wp-content/uploads/2017/04/150763907243280-26.jpg"
 									alt="">
 							</div>
 							<div class="item">
-								<img class="slide-image" src="http://placehold.it/800x300"
+								<img class="slide-image" src="http://techdealguide.com//wp-content/uploads/2018/08/NO2.jpg"
 									alt="">
 							</div>
 						</div>
@@ -50,11 +50,11 @@
 
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxLwMdZt0WkBIu9rMu46G44CSVQLFZOelR1tBrOqR_DvKZXonh" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$24.99</h4>
+							<h4 class="pull-right">Rs.2400.00</h4>
 							<h4>
-								<a href="#">First Product</a>
+								<a href="#">Drone </a>
 							</h4>
 							<p>
 								See more snippets like this online store item at <a
@@ -77,11 +77,11 @@
 
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgj5xGEg4HyoLm705vUTJr1Ugx8thJZvTKx-961gLhfptdMP6z" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$64.99</h4>
+							<h4 class="pull-right">Rs.1254.00</h4>
 							<h4>
-								<a href="#">Second Product</a>
+								<a href="#">Drone</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet,
 								consectetur adipiscing elit.</p>
@@ -101,11 +101,11 @@
 
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlccg-3P_OKczdrEUoDd9O3L_Suu_kKTDptQEKin2HGT33Y-q6" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$74.99</h4>
+							<h4 class="pull-right">Rs.1999.99</h4>
 							<h4>
-								<a href="#">Third Product</a>
+								<a href="#">Drone</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet,
 								consectetur adipiscing elit.</p>
@@ -125,11 +125,11 @@
 
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzinZWZ3_KOguFXYiJLqpax-hEg3ctHUll-oZR6fozIHQgT71qQ" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$84.99</h4>
+							<h4 class="pull-right">Rs.1350.00</h4>
 							<h4>
-								<a href="#">Fourth Product</a>
+								<a href="#">Drone</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet,
 								consectetur adipiscing elit.</p>
@@ -149,11 +149,11 @@
 
 				<div class="col-sm-4 col-lg-4 col-md-4">
 					<div class="thumbnail">
-						<img src="http://placehold.it/320x150" alt="">
+						<img src="https://appsisecommerces3.s3.amazonaws.com/clientes/cliente11742/layout/10/img/inspire1%20megamenu%20dronesrtore.png?t=1484595854" alt="">
 						<div class="caption">
-							<h4 class="pull-right">$94.99</h4>
+							<h4 class="pull-right">Rs.1994.99</h4>
 							<h4>
-								<a href="#">Fifth Product</a>
+								<a href="#">Drone</a>
 							</h4>
 							<p>This is a short description. Lorem ipsum dolor sit amet,
 								consectetur adipiscing elit.</p>
